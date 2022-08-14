@@ -1,0 +1,103 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background: linear-gradient(#ff9933,#ffffff,#138808);
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #000080;
+    font-family: cursive;
+    text-shadow: 1px 1px 5px #ff9933;
+
+}
+.container{
+    position: relative;
+    top: 30%;
+    left: 30%;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 249px;
+}
+.one{
+    position: absolute;
+    top: 0%;
+    left:0%;
+    width: 500px;
+    height: 83px;
+    background-color: #ff9933;
+    animation: flagani 8s infinite;
+    animation-delay: 0.1s;
+}
+.two{
+    position: absolute;
+    top: 83px;
+    left:0%;
+    width: 500px;
+    height: 83px;
+    background-color: #ffffff;
+    animation: flagani 8s infinite;
+    animation-delay: 0.3s;
+}
+.three{
+    position: absolute;
+    top: 166px;
+    left:0%;
+    width: 500px;
+    height: 83px;
+    background-color: #138808;
+    animation: flagani 8s infinite;
+    animation-delay: 0.5s;
+}
+.four img{
+    position: absolute;
+    top: 83px;
+    left:40%;
+    width: 100px;
+    height: 83px;
+    animation: load 8s infinite;
+    animation-delay: 0.3s;
+}
+
+@keyframes flagani{
+    0%{
+        width: 0px;
+        opacity: 0;
+    }
+    30%{
+        width: 500px;
+        opacity: 1;
+    }
+    80%{
+        width: 500px;
+        opacity: 1;
+    }
+    100%{
+        width: 0px;
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes load{
+    0%{
+        left: 0px;
+        opacity: 0;
+    }
+    30%{
+        left: 40%;
+        opacity: 1;
+    }
+    60%{
+        left: 40%;
+        opacity: 1;
+    }
+    100%{
+        left: 0%;
+        opacity: 0;
+    }
+
+}
